@@ -1,8 +1,7 @@
 -- ---------------------------------------------------------------------------
--- SkillBridge schema  (slide 7: users, listings, bids, exchanges, reviews)
+-- HackSaath Database Schema (users, listings, teams, hackathons, mentors, reviews)
 --
--- Run this once in the Supabase dashboard:
---   Project -> SQL Editor -> New query -> paste -> Run
+-- Run this once in your PostgreSQL or Supabase SQL editor:
 -- ---------------------------------------------------------------------------
 
 create extension if not exists "pgcrypto";

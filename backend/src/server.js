@@ -18,7 +18,7 @@ app.use(notFound);
 app.use(errorHandler);
 
 app.listen(env.port, () => {
-  console.log('SkillBridge API');
+  console.log('HackSaath API');
   console.log(`  url      : http://localhost:${env.port}`);
   console.log(`  health   : http://localhost:${env.port}/health`);
   console.log(`  env      : ${env.nodeEnv}`);

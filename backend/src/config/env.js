@@ -34,7 +34,7 @@ export const env = {
 
   mail: {
     driver: (process.env.MAIL_DRIVER || 'console').toLowerCase(),
-    from: process.env.MAIL_FROM || 'SkillBridge <no-reply@skillbridge.local>',
+    from: process.env.MAIL_FROM || 'HackSaath <no-reply@hacksaath.in>',
     smtp: {
       host: process.env.SMTP_HOST || '',
       port: Number(process.env.SMTP_PORT || 587),

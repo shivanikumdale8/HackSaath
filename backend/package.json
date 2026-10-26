@@ -1,8 +1,8 @@
 {
-  "name": "skillbridge-backend",
+  "name": "hacksaath-backend",
   "version": "0.1.0",
   "private": true,
-  "description": "SkillBridge REST API - Node.js + Express + Supabase",
+  "description": "HackSaath REST API - Node.js + Express + Supabase / In-Memory",
   "type": "module",
   "main": "src/server.js",
   "engines": {

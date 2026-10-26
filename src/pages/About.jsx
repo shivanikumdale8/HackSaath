@@ -110,24 +110,24 @@ export default function About() {
     <div className="mx-auto max-w-5xl space-y-16 animate-fade-in py-8">
       {/* Hero Section */}
       <div className="text-center space-y-5 max-w-3xl mx-auto">
-        <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-semibold bg-[#4f46e5]/15 text-[#818cf8] border border-[#4f46e5]/30">
-          <span className="w-2 h-2 rounded-full bg-[#4f46e5]" />
-          The Verified Campus Collaboration Network
+        <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-semibold bg-teal-500/15 text-teal-300 border border-teal-500/30">
+          <span className="w-2 h-2 rounded-full bg-teal-400" />
+          The Verified Student Collaboration Network
         </div>
 
-        <h1 className="text-4xl sm:text-5xl font-bold font-serif tracking-tight text-white leading-tight">
-          Where Student Skills Become <span className="text-[#818cf8] italic">Real Opportunities</span>
+        <h1 className="text-4xl sm:text-5xl font-bold tracking-tight text-white leading-tight">
+          Where Student Skills Become <span className="text-teal-400">Winning Ideas</span>
         </h1>
 
         <p className="text-lg text-slate-300 leading-relaxed">
-          <strong className="text-white font-bold">HackSaath</strong> is a student collaboration platform built to connect students, skills, ideas, projects, and opportunities across campuses. Tagline: <em>"Connect Skills. Create Together."</em>
+          <strong className="text-white font-bold">HackSaath</strong> connects college students, hackathon builders, and project teams across campuses in India. Tagline: <em>"Find Your Team. Build Your Idea."</em>
         </p>
 
         <div className="flex flex-wrap items-center justify-center gap-4 pt-3">
-          <Link to="/browse" className="btn-primary py-2.5 px-6 text-sm font-semibold">
-            Explore Opportunities
+          <Link to="/team-finder" className="rounded-xl bg-teal-500 hover:bg-teal-400 text-slate-950 font-semibold py-2.5 px-6 text-sm transition shadow-sm">
+            Find Teammates
           </Link>
-          <Link to="/support" className="btn-ghost py-2.5 px-6 text-sm font-semibold border border-[#1f2436] bg-[#181c28] text-slate-300 hover:text-white">
+          <Link to="/support" className="rounded-xl border border-[#1e2a44] bg-[#0c1224] text-slate-300 hover:text-white py-2.5 px-6 text-sm font-semibold transition">
             Visit Support Desk
           </Link>
         </div>
@@ -138,9 +138,9 @@ export default function About() {
         {STATS.map((stat, i) => (
           <div
             key={i}
-            className="card p-5 text-center border border-[#1f2436] bg-[#111420] hover:border-[#4f46e5]/50 transition-colors"
+            className="rounded-2xl p-5 text-center border border-[#1e2a44] bg-[#0c1224] hover:border-teal-500/50 transition-colors shadow-sm"
           >
-            <div className="text-3xl font-extrabold text-[#818cf8] font-mono mb-1">
+            <div className="text-3xl font-extrabold text-teal-400 font-mono mb-1">
               {stat.value}
             </div>
             <div className="text-sm font-bold text-white">{stat.label}</div>
@@ -150,29 +150,29 @@ export default function About() {
       </div>
 
       {/* The Story & Mission */}
-      <div className="card p-8 sm:p-10 border border-[#1f2436] space-y-4 bg-[#111420]">
-        <div className="inline-block text-xs uppercase tracking-widest font-bold text-[#818cf8]">
+      <div className="rounded-2xl p-8 sm:p-10 border border-[#1e2a44] space-y-4 bg-[#0c1224]">
+        <div className="inline-block text-xs uppercase tracking-widest font-bold text-teal-400">
           Why HackSaath Exists
         </div>
         <h2 className="text-2xl sm:text-3xl font-bold text-white">
           Bridging the Gap Between Classroom Theory & Real Experience
         </h2>
         <p className="text-slate-300 leading-relaxed text-base">
-          Commercial freelance platforms are crowded by seasoned agencies, charge steep 20% platform commission cuts, and make it virtually impossible for students to land their first gig. Meanwhile, informal campus WhatsApp and Discord groups are disorganized, prone to unpaid work, and lack accountability.
+          Commercial platforms make it virtually impossible for students to land their first gig or connect with serious hackathon partners. Meanwhile, informal campus chat groups are disorganized and lack accountability.
         </p>
         <p className="text-slate-300 leading-relaxed text-base">
-          HackSaath was engineered specifically to solve this. By restricting platform membership to verified university and institutional email addresses, we create a trusted micro-economy where classmates trade abilities, earn fair money, and assemble high-impact project teams safely.
+          HackSaath was engineered specifically to solve this. By creating a dedicated student collaboration space with college verification, team readiness scoring, and mentor guidance, we empower builders to assemble high-impact project teams safely.
         </p>
       </div>
 
       {/* Four Core Pillars */}
       <div className="space-y-6">
         <div className="text-center space-y-2 max-w-xl mx-auto">
-          <h2 className="text-2xl sm:text-3xl font-bold text-white font-serif">
+          <h2 className="text-2xl sm:text-3xl font-bold text-white">
             Four Ways to Elevate Your Campus Journey
           </h2>
           <p className="text-sm text-slate-400">
-            Whether you want to earn money, learn a new craft, or build the next big thing, HackSaath has you covered.
+            Whether you want to build hackathon prototypes, learn a new craft, or build the next big thing, HackSaath has you covered.
           </p>
         </div>
 
@@ -182,13 +182,13 @@ export default function About() {
             return (
               <div
                 key={index}
-                className={`card p-6 border-t-4 ${pillar.borderColor} border border-[#1f2436] bg-[#111420] space-y-3 hover:shadow-lg transition-all`}
+                className="rounded-2xl p-6 border border-[#1e2a44] bg-[#0c1224] space-y-3 hover:border-teal-500/40 transition-all shadow-sm"
               >
                 <div className="flex items-center justify-between">
-                  <div className="w-10 h-10 rounded-xl bg-[#181c28] border border-[#1f2436] flex items-center justify-center text-[#818cf8]">
+                  <div className="w-10 h-10 rounded-xl bg-[#080d1a] border border-[#1e2a44] flex items-center justify-center text-teal-400">
                     <IconComponent className="w-5 h-5" />
                   </div>
-                  <span className={`text-[11px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider ${pillar.badgeBg}`}>
+                  <span className="text-[11px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider bg-teal-500/10 text-teal-400 border border-teal-500/20">
                     {pillar.tag}
                   </span>
                 </div>
@@ -201,12 +201,12 @@ export default function About() {
       </div>
 
       {/* How it Works */}
-      <div className="card p-8 sm:p-10 border border-[#1f2436] space-y-8 bg-[#111420]">
+      <div className="rounded-2xl p-8 sm:p-10 border border-[#1e2a44] space-y-8 bg-[#0c1224]">
         <div className="text-center space-y-2">
-          <div className="text-xs uppercase tracking-widest font-bold text-[#818cf8]">
-            Simple & Transparent Process
+          <div className="text-xs uppercase tracking-widest font-bold text-teal-400">
+            Simple &amp; Transparent Process
           </div>
-          <h2 className="text-2xl sm:text-3xl font-bold text-white font-serif">
+          <h2 className="text-2xl sm:text-3xl font-bold text-white">
             How HackSaath Works
           </h2>
         </div>
@@ -214,7 +214,7 @@ export default function About() {
         <div className="grid md:grid-cols-3 gap-6">
           {STEPS.map((step, idx) => (
             <div key={idx} className="space-y-3 relative">
-              <div className="text-4xl font-extrabold text-[#4f46e5]/30 font-mono">
+              <div className="text-4xl font-extrabold text-teal-500/30 font-mono">
                 {step.step}
               </div>
               <h3 className="text-base font-bold text-white">{step.title}</h3>
@@ -227,7 +227,7 @@ export default function About() {
       {/* Values */}
       <div className="space-y-6">
         <div className="text-center space-y-2 max-w-xl mx-auto">
-          <h2 className="text-2xl sm:text-3xl font-bold text-white font-serif">
+          <h2 className="text-2xl sm:text-3xl font-bold text-white">
             Our Guiding Principles
           </h2>
           <p className="text-sm text-slate-400">
@@ -237,7 +237,7 @@ export default function About() {
 
         <div className="grid md:grid-cols-3 gap-6">
           {VALUES.map((val, i) => (
-            <div key={i} className="card p-6 border border-[#1f2436] bg-[#111420] space-y-2">
+            <div key={i} className="rounded-2xl p-6 border border-[#1e2a44] bg-[#0c1224] space-y-2 shadow-sm">
               <h3 className="text-base font-bold text-white">{val.title}</h3>
               <p className="text-sm text-slate-300 leading-relaxed">{val.desc}</p>
             </div>
@@ -246,19 +246,19 @@ export default function About() {
       </div>
 
       {/* CTA Box */}
-      <div className="card p-8 sm:p-12 text-center border border-[#4f46e5]/30 bg-gradient-to-r from-[#4f46e5]/10 via-[#111420] to-[#4f46e5]/10 space-y-5 rounded-2xl">
-        <h2 className="text-2xl sm:text-3xl font-bold font-serif text-white">
+      <div className="rounded-2xl p-8 sm:p-12 text-center border border-teal-500/30 bg-[#0c1224] space-y-5 shadow-xl">
+        <h2 className="text-2xl sm:text-3xl font-bold text-white">
           Ready to Connect With Fellow Campus Builders?
         </h2>
         <p className="text-sm sm:text-base text-slate-300 max-w-lg mx-auto">
-          Join your college network today. Start trading skills, taking on paid student gigs, and building lasting portfolios.
+          Join your college network today. Find hackathon teammates, take on student project roles, and build lasting portfolios.
         </p>
         <div className="pt-2 flex flex-wrap justify-center gap-3">
-          <Link to="/register" className="btn-primary py-2.5 px-8 text-sm font-semibold">
+          <Link to="/register" className="rounded-xl bg-teal-500 hover:bg-teal-400 text-slate-950 font-semibold py-2.5 px-8 text-sm transition shadow-sm">
             Join HackSaath
           </Link>
-          <Link to="/browse" className="btn-ghost py-2.5 px-8 text-sm font-semibold border border-[#1f2436] bg-[#181c28] text-slate-300 hover:text-white">
-            Browse Tasks & Swaps
+          <Link to="/team-finder" className="rounded-xl border border-[#1e2a44] bg-[#080d1a] text-slate-300 hover:text-white py-2.5 px-8 text-sm font-semibold transition">
+            Find Teammates
           </Link>
         </div>
       </div>

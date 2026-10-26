@@ -30,11 +30,11 @@ async function startServer() {
   }
 
   app.listen(PORT, '0.0.0.0', () => {
-    console.log(`[SkillBridge] Server running on http://0.0.0.0:${PORT} (${isProd ? 'production' : 'development'})`);
+    console.log(`[HackSaath] Server running on http://0.0.0.0:${PORT} (${isProd ? 'production' : 'development'})`);
   });
 }
 
 startServer().catch((err) => {
-  console.error('[SkillBridge] Failed to start server:', err);
+  console.error('[HackSaath] Failed to start server:', err);
   process.exit(1);
 });
