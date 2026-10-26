@@ -1,0 +1,6 @@
+{
+  "name": "SkillSetu",
+  "description": "Connect with students, exchange skills, and build projects together.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
